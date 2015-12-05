@@ -11,8 +11,6 @@ uses
 
 type
   TForm1 = class(TForm)
-    cxGrid1Level1: TcxGridLevel;
-    cxGrid1: TcxGrid;
     PanelBetType: TPanel;
     cxButton1: TcxButton;
     cxButton2: TcxButton;
@@ -28,10 +26,6 @@ type
     cxButton3: TcxButton;
     cxButton4: TcxButton;
     cxButton5: TcxButton;
-    GridView: TcxGridTableView;
-    colProfitLoss: TcxGridColumn;
-    colStake: TcxGridColumn;
-    colRisk: TcxGridColumn;
     cxStyleRepository1: TcxStyleRepository;
     stContentNormal: TcxStyle;
     ActionList1: TActionList;
@@ -52,7 +46,6 @@ type
     cxButton9: TcxButton;
     cxButton10: TcxButton;
     editStake: TcxSpinEdit;
-    colLayOdds: TcxGridColumn;
     stContentGreen: TcxStyle;
     stContentRed: TcxStyle;
     stHeaderGrey: TcxStyle;
@@ -63,6 +56,21 @@ type
     panelSummary: TPanel;
     Label4: TLabel;
     Label5: TLabel;
+    cxButton11: TcxButton;
+    actComm0: TAction;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel6: TPanel;
+    cxButton12: TcxButton;
+    cxButton13: TcxButton;
+    cxButton14: TcxButton;
+    cxGrid1: TcxGrid;
+    GridView: TcxGridTableView;
+    colLayOdds: TcxGridColumn;
+    colStake: TcxGridColumn;
+    colRisk: TcxGridColumn;
+    colProfitLoss: TcxGridColumn;
+    cxGrid1Level1: TcxGridLevel;
     procedure FormCreate(Sender: TObject);
     procedure actComm2Execute(Sender: TObject);
     procedure actComm2Update(Sender: TObject);
@@ -111,7 +119,7 @@ uses
   Clipbrd;
 
 const
-  LayOddsDepth = 4;
+  LayOddsDepth = 24;
 
 {$R *.dfm}
 

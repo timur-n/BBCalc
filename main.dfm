@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = 'Calc'
   ClientHeight = 390
-  ClientWidth = 323
+  ClientWidth = 347
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -16,88 +16,15 @@ object Form1: TForm1
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object cxGrid1: TcxGrid
-    Left = 0
-    Top = 144
-    Width = 323
-    Height = 218
-    Align = alClient
-    TabOrder = 0
-    LookAndFeel.Kind = lfFlat
-    LookAndFeel.NativeStyle = False
-    ExplicitLeft = 32
-    ExplicitTop = 76
-    ExplicitWidth = 250
-    ExplicitHeight = 200
-    object GridView: TcxGridTableView
-      Navigator.Buttons.CustomButtons = <>
-      Navigator.Buttons.First.Visible = True
-      Navigator.Buttons.PriorPage.Visible = True
-      Navigator.Buttons.Prior.Visible = True
-      Navigator.Buttons.Next.Visible = True
-      Navigator.Buttons.NextPage.Visible = True
-      Navigator.Buttons.Last.Visible = True
-      Navigator.Buttons.Insert.Visible = True
-      Navigator.Buttons.Append.Visible = False
-      Navigator.Buttons.Delete.Visible = True
-      Navigator.Buttons.Edit.Visible = True
-      Navigator.Buttons.Post.Visible = True
-      Navigator.Buttons.Cancel.Visible = True
-      Navigator.Buttons.Refresh.Visible = True
-      Navigator.Buttons.SaveBookmark.Visible = True
-      Navigator.Buttons.GotoBookmark.Visible = True
-      Navigator.Buttons.Filter.Visible = True
-      OnCellClick = GridViewCellClick
-      DataController.Summary.DefaultGroupSummaryItems = <>
-      DataController.Summary.FooterSummaryItems = <>
-      DataController.Summary.SummaryGroups = <>
-      OptionsBehavior.DragOpening = False
-      OptionsCustomize.ColumnFiltering = False
-      OptionsCustomize.ColumnGrouping = False
-      OptionsCustomize.ColumnSorting = False
-      OptionsData.Deleting = False
-      OptionsData.Editing = False
-      OptionsData.Inserting = False
-      OptionsSelection.CellSelect = False
-      OptionsSelection.InvertSelect = False
-      OptionsView.ColumnAutoWidth = True
-      OptionsView.GroupByBox = False
-      Preview.AutoHeight = False
-      Styles.Content = stContentNormal
-      Styles.OnGetContentStyle = GridViewStylesGetContentStyle
-      object colLayOdds: TcxGridColumn
-        Caption = 'Lay odds'
-        Styles.Header = stHeaderGrey
-      end
-      object colProfitLoss: TcxGridColumn
-        Caption = 'P / L'
-        Styles.OnGetContentStyle = colProfitLoVssStylesGetContentStyle
-        Styles.Header = stHeaderGrey
-      end
-      object colStake: TcxGridColumn
-        Caption = 'Lay stake'
-        Options.Editing = False
-        Styles.Header = stHeader
-      end
-      object colRisk: TcxGridColumn
-        Caption = 'Liability'
-        Options.Editing = False
-        Styles.Header = stHeaderGrey
-      end
-    end
-    object cxGrid1Level1: TcxGridLevel
-      GridView = GridView
-    end
-  end
   object PanelBetType: TPanel
     Left = 0
     Top = 67
-    Width = 323
+    Width = 347
     Height = 39
     Align = alTop
     BevelOuter = bvNone
-    TabOrder = 1
-    ExplicitWidth = 315
+    TabOrder = 0
+    ExplicitWidth = 323
     object Label5: TLabel
       AlignWithMargins = True
       Left = 3
@@ -120,9 +47,6 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 0
-      ExplicitLeft = 8
-      ExplicitTop = 10
-      ExplicitHeight = 25
     end
     object cxButton2: TcxButton
       AlignWithMargins = True
@@ -141,9 +65,6 @@ object Form1: TForm1
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      ExplicitLeft = 4
-      ExplicitTop = 0
-      ExplicitHeight = 41
     end
     object cxButton5: TcxButton
       AlignWithMargins = True
@@ -156,24 +77,21 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 2
-      ExplicitLeft = 8
-      ExplicitTop = 10
-      ExplicitHeight = 25
     end
   end
   object PanelInputs: TPanel
     Left = 0
     Top = 0
-    Width = 323
+    Width = 347
     Height = 67
     Align = alTop
     BevelOuter = bvNone
-    TabOrder = 2
-    ExplicitWidth = 291
+    TabOrder = 1
+    ExplicitWidth = 323
     object Panel3: TPanel
       Left = 186
       Top = 0
-      Width = 137
+      Width = 161
       Height = 67
       Align = alClient
       BevelOuter = bvNone
@@ -184,15 +102,12 @@ object Form1: TForm1
       Padding.Bottom = 5
       ParentBackground = False
       TabOrder = 0
-      ExplicitLeft = 20
-      ExplicitTop = 2
-      ExplicitWidth = 93
-      ExplicitHeight = 65
+      ExplicitWidth = 137
       object Label1: TLabel
         AlignWithMargins = True
         Left = 8
         Top = 8
-        Width = 121
+        Width = 145
         Height = 13
         Align = alTop
         Caption = 'Lay commission'
@@ -200,31 +115,65 @@ object Form1: TForm1
       end
       object cxButton3: TcxButton
         AlignWithMargins = True
-        Left = 8
+        Left = 49
         Top = 27
-        Width = 41
+        Width = 35
         Height = 32
         Align = alLeft
         Action = actComm2
-        LookAndFeel.NativeStyle = False
-        SpeedButtonOptions.GroupIndex = 1
-        TabOrder = 0
-        ExplicitLeft = 4
-        ExplicitHeight = 40
-      end
-      object cxButton4: TcxButton
-        AlignWithMargins = True
-        Left = 55
-        Top = 27
-        Width = 41
-        Height = 32
-        Align = alLeft
-        Action = actComm5
+        Colors.Default = 7581696
         LookAndFeel.NativeStyle = False
         SpeedButtonOptions.GroupIndex = 1
         TabOrder = 1
-        ExplicitLeft = 51
-        ExplicitHeight = 40
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWhite
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 8
+      end
+      object cxButton4: TcxButton
+        AlignWithMargins = True
+        Left = 90
+        Top = 27
+        Width = 35
+        Height = 32
+        Align = alLeft
+        Action = actComm5
+        Colors.Default = 572159
+        LookAndFeel.NativeStyle = False
+        SpeedButtonOptions.GroupIndex = 1
+        TabOrder = 2
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = [fsBold]
+        ParentFont = False
+        ExplicitLeft = 93
+      end
+      object cxButton11: TcxButton
+        AlignWithMargins = True
+        Left = 8
+        Top = 27
+        Width = 35
+        Height = 32
+        Align = alLeft
+        Action = actComm0
+        LookAndFeel.NativeStyle = False
+        SpeedButtonOptions.GroupIndex = 1
+        TabOrder = 0
+        ExplicitLeft = 12
+        ExplicitTop = 31
+      end
+      object Panel1: TPanel
+        Left = 136
+        Top = 28
+        Width = 185
+        Height = 41
+        Caption = 'Panel1'
+        TabOrder = 3
       end
     end
     object Panel4: TPanel
@@ -241,8 +190,6 @@ object Form1: TForm1
       Padding.Bottom = 5
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 4
-      ExplicitHeight = 73
       object Label2: TLabel
         AlignWithMargins = True
         Left = 8
@@ -251,7 +198,6 @@ object Form1: TForm1
         Height = 13
         Align = alTop
         Caption = 'Lay odds'
-        ExplicitLeft = 12
         ExplicitWidth = 43
       end
       object editLayOdds: TcxSpinEdit
@@ -278,8 +224,6 @@ object Form1: TForm1
         StyleHot.LookAndFeel.NativeStyle = False
         TabOrder = 0
         Value = 1.900000000000000000
-        ExplicitTop = 28
-        ExplicitHeight = 31
         Width = 77
       end
     end
@@ -297,8 +241,6 @@ object Form1: TForm1
       Padding.Bottom = 5
       ParentBackground = False
       TabOrder = 2
-      ExplicitLeft = 4
-      ExplicitHeight = 73
       object Label3: TLabel
         AlignWithMargins = True
         Left = 8
@@ -307,7 +249,6 @@ object Form1: TForm1
         Height = 13
         Align = alTop
         Caption = 'Back odds'
-        ExplicitLeft = 12
         ExplicitWidth = 48
       end
       object editBackOdds: TcxSpinEdit
@@ -334,8 +275,6 @@ object Form1: TForm1
         StyleHot.LookAndFeel.NativeStyle = False
         TabOrder = 0
         Value = 1.800000000000000000
-        ExplicitTop = 28
-        ExplicitHeight = 31
         Width = 77
       end
     end
@@ -343,13 +282,12 @@ object Form1: TForm1
   object PanelStake: TPanel
     Left = 0
     Top = 106
-    Width = 323
+    Width = 347
     Height = 38
     Align = alTop
     BevelOuter = bvNone
-    TabOrder = 3
-    ExplicitTop = 67
-    ExplicitWidth = 291
+    TabOrder = 2
+    ExplicitWidth = 323
     object Label4: TLabel
       AlignWithMargins = True
       Left = 3
@@ -372,7 +310,6 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 0
-      ExplicitLeft = 85
     end
     object cxButton7: TcxButton
       AlignWithMargins = True
@@ -385,7 +322,6 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 1
-      ExplicitLeft = 3
     end
     object cxButton8: TcxButton
       AlignWithMargins = True
@@ -398,7 +334,6 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 2
-      ExplicitLeft = 44
     end
     object cxButton9: TcxButton
       AlignWithMargins = True
@@ -411,7 +346,6 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 3
-      ExplicitLeft = 85
     end
     object cxButton10: TcxButton
       AlignWithMargins = True
@@ -424,7 +358,6 @@ object Form1: TForm1
       LookAndFeel.NativeStyle = False
       SpeedButtonOptions.GroupIndex = 2
       TabOrder = 4
-      ExplicitLeft = 85
     end
     object editStake: TcxSpinEdit
       AlignWithMargins = True
@@ -434,7 +367,7 @@ object Form1: TForm1
       Enabled = False
       ParentFont = False
       Properties.Increment = 5.000000000000000000
-      Properties.ValueType = vtInt
+      Properties.ValueType = vtFloat
       Properties.OnChange = editBackOddsPropertiesChange
       Style.Font.Charset = DEFAULT_CHARSET
       Style.Font.Color = clWindowText
@@ -449,23 +382,160 @@ object Form1: TForm1
       StyleFocused.LookAndFeel.NativeStyle = False
       StyleHot.LookAndFeel.NativeStyle = False
       TabOrder = 5
-      Value = 100
-      ExplicitLeft = 232
-      ExplicitWidth = 80
-      Width = 61
+      Value = 100.000000000000000000
+      ExplicitWidth = 61
+      Width = 85
     end
   end
   object panelSummary: TPanel
     Left = 0
     Top = 362
-    Width = 323
+    Width = 347
     Height = 28
     Align = alBottom
     BevelOuter = bvNone
     Caption = 'Select a row'
+    TabOrder = 3
+    ExplicitWidth = 323
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 144
+    Width = 347
+    Height = 218
+    Align = alClient
+    BevelOuter = bvNone
     TabOrder = 4
-    ExplicitTop = 320
-    ExplicitWidth = 315
+    ExplicitLeft = 44
+    ExplicitTop = 176
+    ExplicitWidth = 258
+    ExplicitHeight = 197
+    object Panel6: TPanel
+      Left = 308
+      Top = 0
+      Width = 39
+      Height = 218
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 0
+      object cxButton12: TcxButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 75
+        Width = 33
+        Height = 30
+        Align = alTop
+        Action = actModeSr
+        LookAndFeel.NativeStyle = False
+        SpeedButtonOptions.GroupIndex = 2
+        TabOrder = 0
+        ExplicitWidth = 39
+      end
+      object cxButton13: TcxButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 33
+        Height = 30
+        Align = alTop
+        Action = actModeQualifier
+        LookAndFeel.NativeStyle = False
+        SpeedButtonOptions.GroupIndex = 2
+        TabOrder = 1
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        ExplicitWidth = 39
+      end
+      object cxButton14: TcxButton
+        AlignWithMargins = True
+        Left = 3
+        Top = 39
+        Width = 33
+        Height = 30
+        Align = alTop
+        Action = actModeSnr
+        LookAndFeel.NativeStyle = False
+        SpeedButtonOptions.GroupIndex = 2
+        TabOrder = 2
+        ExplicitWidth = 39
+      end
+    end
+    object cxGrid1: TcxGrid
+      Left = 0
+      Top = 0
+      Width = 308
+      Height = 218
+      Align = alClient
+      TabOrder = 1
+      LookAndFeel.Kind = lfFlat
+      LookAndFeel.NativeStyle = False
+      ExplicitLeft = 132
+      ExplicitTop = 200
+      ExplicitWidth = 347
+      object GridView: TcxGridTableView
+        Navigator.Buttons.CustomButtons = <>
+        Navigator.Buttons.First.Visible = True
+        Navigator.Buttons.PriorPage.Visible = True
+        Navigator.Buttons.Prior.Visible = True
+        Navigator.Buttons.Next.Visible = True
+        Navigator.Buttons.NextPage.Visible = True
+        Navigator.Buttons.Last.Visible = True
+        Navigator.Buttons.Insert.Visible = True
+        Navigator.Buttons.Append.Visible = False
+        Navigator.Buttons.Delete.Visible = True
+        Navigator.Buttons.Edit.Visible = True
+        Navigator.Buttons.Post.Visible = True
+        Navigator.Buttons.Cancel.Visible = True
+        Navigator.Buttons.Refresh.Visible = True
+        Navigator.Buttons.SaveBookmark.Visible = True
+        Navigator.Buttons.GotoBookmark.Visible = True
+        Navigator.Buttons.Filter.Visible = True
+        OnCellClick = GridViewCellClick
+        DataController.Summary.DefaultGroupSummaryItems = <>
+        DataController.Summary.FooterSummaryItems = <>
+        DataController.Summary.SummaryGroups = <>
+        OptionsBehavior.DragOpening = False
+        OptionsCustomize.ColumnFiltering = False
+        OptionsCustomize.ColumnGrouping = False
+        OptionsCustomize.ColumnSorting = False
+        OptionsData.Deleting = False
+        OptionsData.Editing = False
+        OptionsData.Inserting = False
+        OptionsSelection.CellSelect = False
+        OptionsSelection.InvertSelect = False
+        OptionsView.ColumnAutoWidth = True
+        OptionsView.GroupByBox = False
+        Preview.AutoHeight = False
+        Styles.Content = stContentNormal
+        Styles.OnGetContentStyle = GridViewStylesGetContentStyle
+        object colLayOdds: TcxGridColumn
+          Caption = 'Lay odds'
+          Styles.Header = stHeaderGrey
+        end
+        object colStake: TcxGridColumn
+          Caption = 'Lay stake'
+          Options.Editing = False
+          Styles.Header = stHeader
+        end
+        object colRisk: TcxGridColumn
+          Caption = 'Liability'
+          Options.Editing = False
+          Styles.Header = stHeaderGrey
+        end
+        object colProfitLoss: TcxGridColumn
+          Caption = 'P / L'
+          Styles.OnGetContentStyle = colProfitLoVssStylesGetContentStyle
+          Styles.Header = stHeaderGrey
+        end
+      end
+      object cxGrid1Level1: TcxGridLevel
+        GridView = GridView
+      end
+    end
   end
   object cxStyleRepository1: TcxStyleRepository
     Left = 208
@@ -608,6 +678,12 @@ object Form1: TForm1
       Caption = 'My:'
       OnExecute = actStake5Execute
       OnUpdate = actStake5Update
+    end
+    object actComm0: TAction
+      Category = 'Comm'
+      Caption = '0%'
+      OnExecute = actComm2Execute
+      OnUpdate = actComm2Update
     end
   end
 end
